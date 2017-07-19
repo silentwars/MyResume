@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<title>MyResume</title>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+      <![endif]-->
+      <body>
+      	<!--顶部导航-->
+      	<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="menu-nav">
+      		<div class="container">
+      			<div class="navbar-header">
+      				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      					<span class="sr-only">切换导航</span>
+      					<span class="icon-bar"></span>
+      					<span class="icon-bar"></span>
+      					<span class="icon-bar"></span>
+      				</button>
+      				<a class="navbar-brand" href="#"><span>MyResume</span></a>
+      			</div>
+      			<div class="navbar-collapse collapse">
+      				<ul class="nav navbar-nav pull-left">
+      					<li class="active"><a href="#home_page">首页</a></li>
+      					<li><a href="#about-me">关于我</a></li>
+      					<li><a href="#works">作品</a></li>
+
+      					<li class="dropdown" id="demo-navbar">
+      						<a href="#" class="dropdown-toggle" data-toggle="dropdown">作品介绍<span class="caret"></span></a>
+      						<ul class="dropdown-menu" role="menu">
+      							<li><a href="#tab-MyBlog" data-tab="tab-MyBlog">MyBlog</a></li>
+      							<li><a href="#tab-retailers" data-tab="tab-retailers">仿京东电商网站</a></li>
+      							<li><a href="#tab-enterprise" data-tab="tab-enterprise">企业首页</a></li>
+      							<li><a href="#tab-demo" data-tab="tab-demo">demo</a></li>
+      						</ul>
+      					</li>
+      					<li><a href="#contact">联系我</a></li>
+      					<li><a href="#" class="modal" data-target="#about-modal" data-toggle="modal">关于</a></li>
+      				</ul>
+      			</div>
+      		</div>
+      	</nav>
+
+      	<div class="jumbotron" id="home-page">
+      		<h1>我不想被生活所抛弃。</h1>
+      		<p>我叫陈明<br>努力成为前端开发工程师的路上。<br>chenming_d@163.com</p>
+      		<p><a class="btn btn-lg btn-info" href="#about-me" role="button">了解更多</a></p>
+      	</div>
+
+      	<div class="container summary">
+      		<!--about me-->
+      		<div class="about_me" id="about-me">
+      			<h3>关于我<br>About  Me</h3>
+      			<div class="row row_style">
+      				<div style="height: 25px"></div>
+      				<div class="col-sm-3">
+      					<div class="gly">
+      						<a href="#about-me" class="gly_icon">
+      							<span class="glyphicon  glyphicon-education"></span>
+      						</a>
+      					</div>
+      					<p class="explain_left">学历</p>
+      					<p class="slash"></p>
+      					<p class="explain_right">本科</p>
+      				</div>
+      				<div class="col-sm-3">
+      					<div class="gly">
+      						<a href="#about-me" class="gly_icon">
+      							<span class="glyphicon glyphicon-user"></span>
+      						</a>
+      					</div>
+      					<p class="explain_left">年龄</p>
+      					<p class="slash"></p>
+      					<p class="explain_right">25</p>
+      				</div>
+      				<div class="col-sm-3">
+      					<div class="gly">
+      						<a href="#about-me" class="gly_icon">
+      							<span class="glyphicon  glyphicon-map-marker"></span>
+      						</a>
+      					</div>
+      					<p class="explain_left">坐标</p>
+      					<p class="slash"></p>
+      					<p class="explain_right">成都</p>
+      				</div>
+
+      				<div class="col-sm-3">
+      					<div class="gly">
+      						<a href="#about-me" class="gly_icon">
+      							<span class="glyphicon  glyphicon-pencil"></span>
+      						</a>
+      					</div>
+      					<p class="explain_left">状态</p>
+      					<p class="slash"></p>
+      					<p class="explain_right">求职中</p>
+      				</div>
+      			</div>
+      			<div class="row">
+                        <div id="about_me_info" class="col-md-12">
+                               <p>2016毕业于成都理工大学，web前端爱好者,求职中;</p>
+                               <p>2016年7月，开始了自己的前端学习生涯;</p>
+                               <p>熟练html5、css3、javascript、jquery;</p>
+                               <p>熟悉json、Ajax、bootstrap等;</p>
+                               <p>熟悉一些eventUtil操作、和浏览器兼容性问题;</p>
+                               <p>了解mySQL、WampServer等数据库、简单数据交互、github的使用等。</p>
+                         </div>
+                   </div>      			
+             </div>
+
+
+             <div class="row clearfix" id="works">
+               <div>
+                    <h3 class="text-center">我的作品<br><small>DEMO</small></h3>
+              </div>
+
+              <div class="col-sm-3">
+                    <div class="showLink">
+                         <div class="showLink_shadow">
+                              <p class="showLink_box_title">MyBlog</p>
+                              <span class="showLink_box_icon">
+                                   <a href="https://silentwars.github.io/MyBlog/" target="_blank">
+                                        <img src="images/demo-link.png" />
+                                  </a>
+                            </span>					
+                      </div>
+                      <img class="showLink_img" src="images/demo_box1.jpg" alt="chrome" />
+                </div>				
+                <h4>MyBlog</h4>
+                <p><a class="btn btn-primary" href="https://silentwars.github.io/MyBlog/" role="button" target="_blank">了解更多</a></p>
+          </div>
+
+          <div class="col-sm-3">
+              <div class="showLink">
+                   <div class="showLink_shadow">
+                        <p class="showLink_box_title">仿京东电商网站</p>
+                        <span class="showLink_box_icon">
+                             <a href="https://silentwars.github.io/Imitation-Jingdong-website/" target="_blank">
+                                  <img src="images/demo-link.png" />
+                            </a>
+                      </span>					
+                </div>
+                <img class="showLink_img" src="images/demo_box2.jpg" alt="chrome" />
+          </div>				
+          <h4>仿京东网站</h4>
+
+          <p><a class="btn btn-primary" href="https://silentwars.github.io/Imitation-Jingdong-website/" role="button" target="_blank">了解更多</a></p>
+    </div>
+    <div class="col-sm-3">
+        <div class="showLink">
+             <div class="showLink_shadow">
+                  <p class="showLink_box_title">企业网页</p>
+                  <span class="showLink_box_icon">
+                       <a href="https://silentwars.github.io/Enterprise-website/" target="_blank">
+                            <img src="images/demo-link.png" />
+                      </a>
+                </span>                             
+          </div>
+          <img class="showLink_img" src="images/demo_box3.jpg" alt="chrome" />
+    </div>                        
+    <h4>企业网页开发</h4>
+    <p><a class="btn btn-primary" href="https://silentwars.github.io/Enterprise-website/" role="button" target="_blank">了解更多</a></p>
+</div>
+
+
+<div class="col-sm-3">
+  <div class="showLink">
+       <div class="showLink_shadow">
+            <p class="showLink_box_title">各种DEMO</p>
+            <span class="showLink_box_icon">
+                 <a href="https://silentwars.github.io/Some-demos/" target="_blank">
+                      <img src="images/demo-link.png" />
+                </a>
+          </span>					
+    </div>
+    <img class="showLink_img" src="images/demo_box4.jpg" alt="chrome" />
+</div>				
+<h4>DEMO</h4>
+<p><a class="btn btn-primary" href="https://silentwars.github.io/Some-demos/" role="button" target="_blank">了解更多</a></p>
+</div>
+</div>
+<hr class="divider">
+
+<!--标签页-->
+<ul class="nav nav-tabs" role="tablist" id="feature-tab">
+   <li class="active"><a href="#tab-MyBlog" role="tab" data-toggle="tab">MyBlog</a></li>
+   <li><a href="#tab-retailers" role="tab" data-toggle="tab">仿京东电商网站</a></li>
+   <li><a href="#tab-enterprise" role="tab" data-toggle="tab">企业网站</a></li>
+   <li><a href="#tab-demo" role="tab" data-toggle="tab">DEMO</a></li>
+</ul>
+
+<div class="tab-content">
+   <div class="tab-pane active" id="tab-MyBlog">
+        <div class="row feature">
+             <div class="col-md-5  col-md-offset-2 feature">
+                  <h2 class="feature-heading">MyBlog<span
+                       class="text-muted"></span></h2>
+                       <p class="lead">对其它博客的浏览和学习，采用响应式的两栏布局。通过HTML(5)、CSS(3)、原生的js、juqery、以及tooltip插件，进行了开发。</p>
+                 </div>
+                 <div class="col-md-3">
+                       <img  class="feature-image img-responsive" src="images/tab-img1.png" alt="MyBlog">
+                 </div>
+           </div>
+     </div>
+     <div class="tab-pane" id="tab-retailers">
+       <div class="row feature">
+            <div class="col-md-3  col-md-offset-2">
+                 <img  class="feature-image img-responsive" src="images/tab-img2.png" alt="retailers">
+           </div>
+           <div class="col-md-5  col-md-offset-1 feature">
+
+                 <h2 class="feature-heading">仿京东电商网站<span class="text-muted"></span>
+                 </h2>
+
+                 <p class="lead">经过慕课网相关课程，对电商网站的布局和相关技术细节进行了学习。通过下载psd文档，对应进行开发。</p>
+           </div>
+     </div>
+</div>
+<div class="tab-pane" id="tab-enterprise">
+ <div class="row feature">
+      <div class="col-md-5 col-md-offset-2">
+           <h2 class="feature-heading">企业网站<span class="text-muted"></span></h2>
+
+           <p class="lead">仿慕课网首页，通过HTML(5)、CSS(3)及myfocus JS焦点图库来开发。</p>
+     </div>
+     <div class="col-md-3">
+           <img class="feature-img img-responsive" src="images/tab-img3.png" alt="enterprise" />
+     </div>
+</div>
+</div>
+<div class="tab-pane" id="tab-demo">
+ <div class="row feature">
+      <div class="col-md-3 col-md-offset-2">
+           <img class="feature-image img-responsive" src="images/tab-img4.png"
+           alt="demo">
+     </div>
+     <div class="col-md-5 col-md-offset-1 feature">
+           <h2 class="feature-heading">DEMO<span class="text-muted"></span>
+           </h2>
+           <p class="lead">自己在学习前端的过程中，写下的一些DEMO。如:抽奖系统、瀑布流以及封装的一些js框架。</p>
+     </div>
+</div>
+</div>
+</div>
+
+<div class="hr_30"></div>
+<!--contact me-->
+<div class="contact_me" id="contact">
+  <h3>联系我<br>Contact Me</h3>
+  <div class="contact_color">
+       <h3>兴趣&nbsp;&nbsp;代码&nbsp;&nbsp;创作&nbsp;&nbsp;未来<br><span>INSPIRATION</span>&nbsp;&nbsp;<span>CODE</span>&nbsp;&nbsp;<span>DREAM</span>&nbsp;&nbsp;<span>FUTURE</span> </h3>
+ </div>
+ <div class="well_list">
+       <p class="well">不断的学习，寻找自己的乐趣。<br>前端更贴近用户，美妙的体验<br>不想被生活所抛弃，热爱生活的美好<br>行路有良友，便是捷径<br>带上我吧，我们一起追寻更大的世界</p> 
+ </div>            
+</div>
+
+<!--弹出框-->
+<div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label"
+aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+       <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">关于</span></button>
+            <div class="modal-title">关于</div>
+      </div>
+      <div class="modal-body">
+            <p>此页面为个人简历页，主要用于寻找工作使用。</p>
+      </div>
+      <div class="modal-footer ">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+      </div>
+</div>
+</div>
+</div>
+
+<div class="forward_link">                       
+   <a href="https://github.com/silentwars"><img src="images/github.svg"></a>
+   <a href="#"><img src="images/zhihu.svg"></a>
+   <a href="#"><img src="images/weibo.svg"></a>
+</div>
+
+<footer>
+   <p class="pull-right"><a href="#"><span class="glyphicon glyphicon-menu-up"></span></a></p>
+   <p>&copy; 陈明</p>
+</footer>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+         $("#demo-navbar .dropdown-menu a").click(function(){
+              var href=$(this).attr("href");
+              $("#feature-tab a[href='"+href+"']").tab("show");
+        });
+
+
+         var showLink_shadow=$(".showLink_shadow"),
+         showLink_box_title=$(".showLink_box_title"),
+         showLink_box_icon=$(".showLink_box_icon");
+
+         $(".showLink").on("mouseenter",function(){
+              $(this).find(showLink_shadow).css({display:'block'});
+              $(this).find(showLink_box_title).stop().animate({top:10}, 600);
+              $(this).find(showLink_box_icon).stop().animate({top:100}, 600);
+
+        });
+         $(".showLink").on("mouseleave",function(){
+              $(this).find(showLink_shadow).css({display:'none'},600);
+              $(this).find(showLink_box_title).stop().animate({top:-60}, 600);
+              $(this).find(showLink_box_icon).stop().animate({top:200}, 600);
+        });
+
+         var glyphicon_menu_up=$(".glyphicon-menu-up");
+         glyphicon_menu_up.on('click',function(){
+              $('html,body').animate({scrollTop:0},600);
+        });
+         $(window).on('scroll',function(){
+              if($(window).scrollTop()>$(window).height()){
+                   glyphicon_menu_up.fadeIn();
+
+             }else{
+                   glyphicon_menu_up.fadeOut();
+             }
+       });
+   });
+</script>
+</body>
+</head>
